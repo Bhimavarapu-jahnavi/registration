@@ -29,7 +29,6 @@ function register() {
   };
 
   console.log(userData);
-  window.location.reload();
 
 }
 
