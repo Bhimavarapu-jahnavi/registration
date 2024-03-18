@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <script src="regjs.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <form id="registrationForm">
+        <h3>REGISTRATION FORM FOR WORKSHOP</h3>
+        <label>Name:</label>
+
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="firstname"
+          required
+        />
+        <input
+          type="text"
+          id="lastName"
+          name="lasttName"
+          placeholder="lastname"
+          required
+        />
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label>Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-mail"
+          required
+        />
+
+        <label>Address:</label>
+        <input
+          type="textarea"
+          id="address"
+          name="address"
+          placeholder="address"
+          required
+        />
+
+        <label>City:</label>
+        <input type="text" id="city" name="city" placeholder="city" />
+        <label>State:</label>
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="state"
+          required
+        />
+        <label>Select your course:</label>
+        <select id="course">
+          <option value="Course">Course</option>
+          <option value="dsml">DS&ML</option>
+          <option value="ai">AI</option>
+          <option value="cybersecurity">Cybersecurity</option>
+          <option value="cloudcomputing">Cloud Computing</option>
+          <option value="blockchain">Blockchain</option>
+        </select>
+        <label>How did you know about the worshop:</label>
+        <input
+          type="radio"
+          id="know"
+          name="g1"
+          value="Friend/Colleague"
+        />Friend/Colleague<br />
+        <input type="radio" id="know1" name="g1" value="online Search" />online
+        search<br />
+
+        <input type="radio" id="know2" name="g1" value="Others" />others<br />
+        <input type="checkbox" id="check" value="Rememberme"/>Remember Me<br/>
+        <button type="button" onclick="register()">Register</button>
+      </form>
+  </body>
+</html>
